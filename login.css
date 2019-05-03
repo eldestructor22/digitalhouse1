@@ -1,0 +1,15 @@
+body{
+  color:#FFFFFF;
+  background-image: url(../images/fondo1.jpg);
+  background-attachment: fixed;
+  }
+form{
+color: #FFFFFF;
+}
+h1{
+text-align: center;
+text-decoration: underline;
+}
+*{
+font-family: 'Roboto Condensed', sans-serif;
+}
