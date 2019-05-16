@@ -1,0 +1,23 @@
+*{
+  color: white;
+  
+}
+body{
+  color:white;
+  background:url(../img/fondo1.jpg)
+
+}
+h1{
+  color:white;
+}
+h3{
+  color:white;
+}
+p{
+  font-size: 20px;
+  color:white;
+}
+.header{
+  font-size: 20px;
+  color:white;
+}
