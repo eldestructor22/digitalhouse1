@@ -1,0 +1,16 @@
+body{
+  color:#FFFFFF;
+  background-color: black;
+  background-attachment: fixed;
+  background-image: url(imagenes/fondo.jpg);
+  }
+form{
+color: #FFFFFF;
+}
+h1{
+text-align: center;
+text-decoration: underline;
+}
+*{
+font-family: 'Roboto Condensed', sans-serif;
+}

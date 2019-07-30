@@ -1,0 +1,14 @@
+body {background-image: url(../imges/fondoF.jpg);
+  color:#FFFFFF;
+}
+
+
+  h1{text-align: center;
+  color:#9333FF;
+  text-decoration: underline;
+}
+
+p{ font-size: 80px;
+  text-align: center;
+  color: #EC33FF;
+}
