@@ -10,4 +10,5 @@ class HomeUsuarioController extends Controller
       return view('homeUsuario');
 
 }
+
 }

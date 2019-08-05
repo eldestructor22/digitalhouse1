@@ -27,7 +27,7 @@
                             <label for="nombreDeUsuario" class="col-md-4 col-form-label text-md-right">{{ __('Nombre de usuario') }}</label>
 
                             <div class="col-md-6">
-                                <input id="nombreDeUsuario" type="text" class="form-control @error('nombreDeUsuario') is-invalid @enderror" name="nombreDeUsuario" value="{{ old('nombreDeUsuario') }}" autocomplete="nombreDeUsuario" autofocus>
+                                <input id="nombreDeUsuario" type="text" class="form-control @error('nombreDeUsuario') is-invalid @enderror" name="nombre_de_usuario" value="{{ old('nombreDeUsuario') }}" autocomplete="nombreDeUsuario" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
