@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use \App\preguntas;
-// use \App\Respuestas;
+use App\Pregunta;
+use App\Respuesta;
 
 class juegoController extends Controller
 {
-  public function index(){
-    return view('juego');
 
-}
-   public function show($tema_id){
-     $pregunta = pregunta::find($tema_id);
-     return view('juego',['tema_id'=>$pregunta]);
+   public function show(){
+     // $pregunta = Pregunta::where('tema_id',$id)->first();
+     $preguntas = Pregunta::all();
+     // $pregunta = pregunta::find($tema_id);
+      return view('juego',['preguntas'=>$preguntas]);
+
   }
 }
