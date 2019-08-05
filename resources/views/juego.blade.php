@@ -9,27 +9,26 @@
   <body>
     <div class="container">
       <div class="pregunta1">
-        <h2>{{}}</h2>
-        <ul>
-          <li>respuesta1</li>
-          <li>respuesta2</li>
-          <li>respuesta3</li>
-          <li>respuesta4</li>
-        </ul>
-        <button type="button" name="button">Responder</button>
+        @foreach($preguntas as $pregunta)
+          <li>{{$pregunta->enunciado}}</li>
+          @foreach ($pregunta->respuestas as $respuestita)
+            <input type="checkbox">{{$respuestita->enunciado}}
+          @endforeach
+          <button type="button" name="button">Responder</button>
+        @endforeach
+
       </div>
-      <div class="pregunta2">
-        <script>
+      {{-- <div class="pregunta2">
+        {{-- <script>
           $( ".pregunta2" ).hide(function(){
 
           });
         </script>
-        <h2 name="enunciado">pregunta2</h2>
+        <h2>{{$pregunta->enunciado}}</h2>
         <ul>
-          <li>respuesta1</li>
-          <li>respuesta2</li>
-          <li>respuesta3</li>
-          <li>respuesta4</li>
+          @foreach ($respuesta as $respuestita)
+            <li>{{$respuestita->enunciado}}</li>
+          @endforeach
         </ul>
         <button type="button" name="button">Responder</button>
       </div>
@@ -77,7 +76,7 @@
           <li>respuesta4</li>
         </ul>
         <button type="button" name="button">Responder</button>
-      </div>
+      </div> --}}
     </div>
   </body>
 </html>

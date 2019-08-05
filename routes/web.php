@@ -35,5 +35,4 @@ Route::get('/crearPregunta', function(){
   return view('crearPregunta');
 });
 Route::post('/crearPregunta','preguntasController@crear');
-Route::get('/juego','juegoController@index');
-Route::get('juego/{tema_id}', 'juegoController@show');
+Route::get('/juego','juegoController@show');
