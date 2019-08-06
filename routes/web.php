@@ -36,3 +36,5 @@ Route::get('/crearPregunta', function(){
 });
 Route::post('/crearPregunta','preguntasController@crear');
 Route::get('/juego','juegoController@show');
+Route::post('/juego/test','juegoController@game');
+Route::get('/ranking','rankingController@index');
