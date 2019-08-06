@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title>Ultimate Quiz</title>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-white">
+   <nav class="navbar navbar-expand-lg navbar-light bg-danger">
   <a class="navbar-brand" href="#">U.Q</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

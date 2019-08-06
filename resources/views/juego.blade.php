@@ -8,16 +8,19 @@
   </head>
   <body>
     <div class="container">
+      <form class="" action="/juego/test" method="post">
+        @csrf
+
       <div class="pregunta1">
         @foreach($preguntas as $pregunta)
           <li>{{$pregunta->enunciado}}</li>
           @foreach ($pregunta->respuestas as $respuestita)
-            <input type="checkbox">{{$respuestita->enunciado}}
+            <input type="radio" name="respuesta[{{$pregunta->id}}]" value="{{$respuestita->id}}">{{$respuestita->enunciado}}
           @endforeach
-          <button type="button" name="button">Responder</button>
         @endforeach
-
       </div>
+      <button type="submit" name="button">Responder</button>
+            </form>
       {{-- <div class="pregunta2">
         {{-- <script>
           $( ".pregunta2" ).hide(function(){

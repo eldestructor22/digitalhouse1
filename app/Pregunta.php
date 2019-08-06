@@ -10,6 +10,7 @@ class Pregunta extends Model
     public $timestamps = true;
 
     public function respuestas(){
-      return $this->belongsToMany(Respuesta::class, 'preguntas_respuestas');
+      return $this->belongsToMany(Respuesta::class, 'preguntas_respuestas', 'pregunta_id', 'respuesta_id')
+      ->withPivot('correcto');
     }
 }
