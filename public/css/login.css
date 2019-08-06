@@ -1,11 +1,11 @@
 body{
-  color:#FFFFFF;
+  color:black;
   background-color: black;
   background-attachment: fixed;
   background-image: url(imagenes/fondo.jpg);
   }
 form{
-color: #FFFFFF;
+color: black;
 }
 h1{
 text-align: center;
