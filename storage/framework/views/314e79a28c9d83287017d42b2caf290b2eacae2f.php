@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Ultimate Quiz</title>
-    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/estilos.css')); ?>">
 
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -29,17 +29,18 @@
     </ul>
   </div>
 </nav>
-@yield('barra')
+<?php echo $__env->yieldContent('barra'); ?>
 <div class="d-flex justify-content-center">
   <h1>Ultimate Quiz</h1>
 
 </div>
   </head>
   <body>
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
 
 <h3>Bienvenidos</h3>
 <br>
 <p>Este juego de preguntas llamado Ultimate Quiz, tratara sobre una serie de preguntas sobre temas variados y competir por cual jugador responde la mayor cantidad de preguntas correctas y quien tiene la mayor puntuacion.</p>
 <br>
 <p>Es un grandioso juego para competir con amigos y ver quien es el que consigue la mejor puntuacion de todas, pero mientras mas preguntas respondas, mas dificil seran las preguntas.</p>
+<?php /**PATH C:\xampp\htdocs\FINAL 2\resources\views/sitio.blade.php ENDPATH**/ ?>

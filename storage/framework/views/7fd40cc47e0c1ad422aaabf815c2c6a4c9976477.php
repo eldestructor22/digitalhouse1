@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Ultimate Quiz</title>
-    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
-
+    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+ <link rel="stylesheet" href="<?php echo e(asset('css/estilos.css')); ?>">
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <a class="navbar-brand" href="#">U.Q</a>
+   <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">E.D</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -17,29 +17,32 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="register">Register <span class="sr-only">(current)</span></a>
+        <li class="nav-link" href="#">Home <span class="sr-only">(current)</span></li>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login">Login</a>
+        <a class="nav-link" href="<?php echo e(route('logout')); ?>"
+           onclick="event.preventDefault();
+                         document.getElementById('logout-form').submit();">
+            <?php echo e(__('Cerrar Sesion')); ?>
+
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="faqs">FAQs</a>
+        <a class="nav-link" href="faqs">Preguntas Frecuentes</a>
       </li>
 
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Ranking</button>
+    </form>
   </div>
-</nav>
-@yield('barra')
+</nav> -->
 <div class="d-flex justify-content-center">
-  <h1>Ultimate Quiz</h1>
+  <a class="nav-link" href="juego">Click aqui para jugar</a>
 
 </div>
-  </head>
-  <body>
-    @yield('content')
 
-<h3>Bienvenidos</h3>
-<br>
-<p>Este juego de preguntas llamado Ultimate Quiz, tratara sobre una serie de preguntas sobre temas variados y competir por cual jugador responde la mayor cantidad de preguntas correctas y quien tiene la mayor puntuacion.</p>
-<br>
-<p>Es un grandioso juego para competir con amigos y ver quien es el que consigue la mejor puntuacion de todas, pero mientras mas preguntas respondas, mas dificil seran las preguntas.</p>
+</head>
+  <body>
+<?php /**PATH C:\xampp\htdocs\FINAL 2\resources\views/HomeUsuario.blade.php ENDPATH**/ ?>
