@@ -19,18 +19,24 @@ class juegoController extends Controller
 
   }
   public function game(Request $request){
-    $usuario = Auth::user()->id;
-    $puntaje = $request->all();
+    // $usuario = Auth::user()->id;
+    // $puntaje = $request->all();
+    $correctas = 0;
+    $incorrectas = 0;
     foreach ($request->respuesta as $pregunta_id => $respuesta_id) {
       $pregunta = Preguntas_respuestas::where('pregunta_id', $pregunta_id)
       ->where('correcto', 1)->first();
       if ($pregunta->respuesta_id == $respuesta_id) {
-        echo 'La respuesta es correcta';
+        $correctas++;
+      } else {
+        $incorrectas++;
       }
 
     }
-    
-    dd($puntaje);
+
+    // dd($correctas, $incorrectas);
+
+    return view('juegoTerminado', compact('correctas', 'incorrectas'));
 
 
   }

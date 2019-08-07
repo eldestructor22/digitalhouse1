@@ -52,5 +52,6 @@ public function crear(Request $request){
     $pregunta_respuesta->correcto = 0;
     $pregunta_respuesta->save();
 
-  } 
+    return redirect('/home');
+  }
 }
