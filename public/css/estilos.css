@@ -1,14 +1,20 @@
-body {background-image: url(../imges/fondoF.jpg);
-  color:#FFFFFF;
+body {background-image: url(../imagenes/fondo.jpg);
+  color:black
 }
 
 
   h1{text-align: center;
-  color:#9333FF;
+  color:#FFFFFF;
   text-decoration: underline;
 }
+h3{
+  color:#FFFFFF
+}
 
-p{ font-size: 80px;
+p{ font-size: 20px;
   text-align: center;
-  color: #EC33FF;
+  color: #FFFFFF;
+}
+a{
+  color:#FFFFFF
 }

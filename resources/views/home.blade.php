@@ -1,5 +1,7 @@
+@extends('HomeUsuario')
 @extends('layouts.app')
-@include('HomeUsuario')
+
+
 
 @section('content')
 {{-- <div class="container">
