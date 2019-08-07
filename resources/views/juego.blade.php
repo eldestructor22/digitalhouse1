@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Ultimate Quiz</title>
+    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js">
     </script>
   </head>
